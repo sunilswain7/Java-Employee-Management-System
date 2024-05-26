@@ -176,7 +176,6 @@ public class AddEmployee extends JFrame implements ActionListener{
             new Home();
         }
     }
-
     public static void main(String[] args) {
         new AddEmployee();
     }
