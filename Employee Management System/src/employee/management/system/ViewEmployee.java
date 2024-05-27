@@ -1,5 +1,4 @@
 package employee.management.system;
-
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
@@ -73,7 +72,6 @@ public class ViewEmployee extends JFrame implements ActionListener{
         setLocation(300, 100);
         setVisible(true);
     }
-
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == search) {
             String query = "select * from employee where empId = '"+cemployeeId.getSelectedItem()+"'";
@@ -98,7 +96,6 @@ public class ViewEmployee extends JFrame implements ActionListener{
             new Home();
         }
     }
-
     public static void main(String[] args) {
         new ViewEmployee();
     }
